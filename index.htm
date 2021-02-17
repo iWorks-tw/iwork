@@ -7,7 +7,7 @@
     </meta>
     <style type="text/css">
         .head {
-            background-color: #5d8aa6;
+            background-color: white;//#5d8aa6
             height: 200px;
         }
 
@@ -21,27 +21,32 @@
         main>.logo {
             flex: none;
             width: 200px;
-            align-self: center;
+            text-align: center;
             margin-left: 10%;
             margin-right:auto;
+            
         }
 
         main>.text {
             flex: auto;
             width: 25%;
-            height: 135px;
+            height: 195px;
             text-align: center;
             font-weight: bold;
             color: white;
             font-size: 30px;
+            
         }
 
         main>.pic {
             flex: none;
             width: 200px;
+            height: 195px;
+            text-align: center;
             margin-left: auto;
-            margin-right: 10%;
+            margin-right: 100px;
             align-self: flex-end;
+            
         }
 
         menu {
@@ -107,10 +112,10 @@
      }
      .menu {
             //height: 40px;
-            width: 1000px;
+            width: 100%;
             margin: 0 auto;
-            font-size: 25px;
-            color: green;
+            font-size: 20px;
+            color: black;
             font-weight: bold;
             text-align: center;
             margin-top:0px;
@@ -118,11 +123,11 @@
         }
 
       .item {
-            width: 250px;
+            width: 10%;
             height: 30px;
             //padding: 3px; 
-            margin-left: 30px;
-            margin-right:  30px;
+            margin-left: 2%;
+            margin-right:  2%;
             display: inline-block;
             //border: white dashed 1px;
         }
@@ -134,17 +139,19 @@
             background-color: #eee;
         }
 
-        .box {
+        .boxL,.boxC,.boxR {
             width: 250px;
             height: 250px;
             padding: 10px;
-            margin: 30px;
+            
             background-color: white;
             display: inline-block;
             vertical-align: top;
-
         }
-        div.box:hover{background-color: green;}
+        .boxL{margin-left:0;margin-right: 60px;}
+        .boxC{margin-left:30px;margin-right: 30px; }
+        .boxR{margin-left:60px;margin-right: 0;}
+        //div.boxL,div.boxC,div.boxR:hover{background-color: green;}
     </style>
 </head>
 
@@ -152,24 +159,32 @@
 
     <div class="head">
         <main>
-            <div class="logo"><img src="data/logo.png"></div>
-            <div class="text"><img src="data/code.png"></div>
-            <div class="pic">i-Works:忘憂編碼、隨想隨寫</div>
+            <div class="logo"><img style=" width:200px; " src="data/think1.png"></div>
+            <div class="text"><img src="data/cp.png">
+                <div class="menu">
+                    <div class="item">演算法</div>
+                    <div class="item">數學趣</div>
+                    <div class="item">隨想寫</div>
+                </div>
+            </div>
+            <div class="pic"><img  src="data/logoR.png"></div>
         </main>
     </div>
-   <hr style="height:2px;border-width:0;color:green;background-color:green;margin-top: 2px" />
-    <div class="menu">
-           <div class="item">演算法</div>
-            <div class="item">數學趣</div>
-            <div class="item">隨想隨寫</div>
-   </div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin-top: 2px" />
+    
+
   <hr style="width:1000px;height:1px;border-width:0;color:gray;background-color:gray;margin:0 auto" />
+  <br>
+  <div style="width:990px;height: 430px;color: white;background-color: wihte;margin: 0 auto;border: black dashed 1px;"><img src="data/index.jpeg"></div>
+  <br>
+  <hr style="width:1000px;height:1px;border-width:0;color:gray;background-color:gray;margin:0 auto" />
+  <br>
     <div class="content">
-        <div class="box"><img src="data/algorithm.png" width="250px" height="250px"></div>
-        <div class="box"><img src="data/math.png" width="250px" height="250px"></div>
-        <div class="box"><img src="data/other.png" width="250px" height="250px"></div>
+        <div class="boxL"><img src="data/algorithm.png" width="250px" height="250px"></div>
+        <div class="boxC"><img src="data/math.png" width="250px" height="250px"></div>
+        <div class="boxR"><img src="data/other.png" width="250px" height="250px"></div>
     </div>
-    <div style="width:1000px;height: 430px;color: white;background-color: black;margin: 0 auto;">I see U</div>
+    
     
 </body>
 
